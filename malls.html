@@ -1,0 +1,193 @@
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Торговые Центры Алматы</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('Карта/Алматы.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #333; 
+        }
+
+        
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        
+        .home-page, .map-page {
+            display: none;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+        }
+
+        .home-page {
+            display: block;
+        }
+
+        .home-page h1 {
+            font-size: 36px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .home-page p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333; 
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .sidebar {
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .sidebar-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .sidebar-item p {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #333; 
+        }
+
+        .map-container {
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .map-container img {
+            width: 100%;
+            height: auto;
+            border: 3px solid #fff;
+            border-radius: 10px;
+        }
+
+        .info-section {
+            width: 250px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .info-section h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #FFD700;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
+
+        .info-section p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #333; /
+        }
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <a href="javascript:void(0);" onclick="showPage('home')">Приветственная страница</a>
+        <a href="javascript:void(0);" onclick="showPage('map')">Торговые центры Алматы</a>
+    </nav>
+
+   
+    <div class="home-page">
+        <h1>Добро пожаловать в Алматы!</h1>
+        <p>Алматы — крупнейший город Казахстана, известен своими горными пейзажами, культурным наследием и, конечно, торговыми центрами. Этот город предлагает посетителям множество развлечений и покупок.</p>
+        <p>На этой странице вы найдете информацию о самых популярных торговых центрах Алматы.</p>
+    </div>
+
+    
+    <div class="map-page">
+        <h1>Популярные Торговые Центры Алматы</h1>
+
+        <div class="container">
+            
+            <div class="sidebar">
+                <div class="sidebar-item">
+                    <img src="Карта/Мега.jpeg" alt="ТРЦ 1">
+                    <p>ТРЦ "Mega Alma-Ata"</p>
+                </div>
+                <div class="sidebar-item">
+                    <img src="Карта/Форум.jpg" alt="ТРЦ 2">
+                    <p>ТРЦ "Forum"</p>
+                </div>
+                <div class="sidebar-item">
+                    <img src="Карта/Есентай.jpg" alt="ТРЦ 3">
+                    <p>ТРЦ "Esentai Mall"</p>
+                </div>
+            </div>
+
+            
+            <div class="map-container">
+                <map name="map1">
+                    <area shape="RECT" coords="261,350,431,380" href="https://mega.kz/" title="Mega" />
+                    <area shape="RECT" coords="346,250,502,280" href="https://atakentmall.kz/" title="Atakent Mall" />
+                    <area shape="RECT" coords="342,186,469,217" href="https://www.instagram.com/globus_trc/?hl=ru" title="Globus" />
+                    <area shape="RECT" coords="405,86,547,114" href="https://mega.kz/" title="Mega" />
+                    <area shape="RECT" coords="160,202,304,233" href="https://grandpark.kz/" title="Grand Park" />
+                    <area shape="RECT" coords="1,208,133,239" href="https://aport.kz/" title="Aport" />
+                    <area shape="RECT" coords="217,328,256,357" href="https://almatymall.kz/" title="Almaty Mall" />
+                    <area shape="RECT" coords="360,88,396,117" href="http://trk-maxima.kz/" title="Maxima" />
+                </map>
+                <img src="C:\Users\D.C.COM\Desktop\Сайт\Карта\яндекс карта.png" usemap="#map1" border="0" />
+            </div>
+
+            <div class="info-section">
+                <h2>Интересные факты</h2>
+                <p><b>Mega Alma-Ata</b> — один из крупнейших торгово-развлекательных центров города, предлагающий множество магазинов, ресторанов и кинотеатр.</p>
+                <p><b>Forum</b> — современный центр с уникальным дизайном, часто проводит культурные и развлекательные мероприятия.</p>
+                <p><b>Esentai Mall</b> — премиальный торговый центр, где представлены люксовые бренды и высококлассные рестораны.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 
+        function showPage(page) {
+            if (page === 'home') {
+                document.querySelector('.home-page').style.display = 'block';
+                document.querySelector('.map-page').style.display = 'none';
+            } else if (page === 'map') {
+                document.querySelector('.home-page').style.display = 'none';
+                document.querySelector('.map-page').style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
+
